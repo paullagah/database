@@ -1,14 +1,4 @@
-  144  cd Desktop/
-  145  ls
-  146  ls -la
-  147  mkdir Database
-  148  ls -la
-  149  cd Database/
-  150  ls -la
-  151  echo "# database" >> README.md
-  152  git init
-  153  git add README.md
-  154  git commit -m "Readme file"
-  155  git remote add origin https://github.com/paullagah/database.git
-  156  git push -u origin master
-  157  history
+source world.sql
+show tables;
+use world;
+create database if not exists world;
