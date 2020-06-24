@@ -1,0 +1,12 @@
+source world.sql
+show tables;
+use world;
+create database if not exists world;
+create table people ( first_name varchar(30) not null, last_name varchar(30) not null, age int not null, unique(first_name, last_name) );
+show tables;
+describe people;
+drop table if exists people;
+alter table people add gender varchar(1);
+insert into people values ("paul", "lagah", 27, 1);
+select * from people;
+delete from people;
