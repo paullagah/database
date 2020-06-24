@@ -10,3 +10,8 @@ alter table people add gender varchar(1);
 insert into people values ("paul", "lagah", 27, 1);
 select * from people;
 delete from people;
+select * from city limit 6;
+select Name as Country, District, Population from city order by Population desc limit 10;
+select Name as Country, District, Population, Population/1000000 as Millions from city order by Population desc limit 10;
+select Name as Country, District, Population, Population/1000000 as Millions from city where Population > 6000000 order by Population desc;
+select * from city where CountryCode="USA" limit 15;
