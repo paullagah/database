@@ -1,0 +1,39 @@
+1. select count(CountryCode) from city where CountryCode="USA";
+
+2. select population, avg(LifeExpectancy) as Average_LE from country where Code="ARG";
+
+3. select * from country where GNPOld is not null order by LifeExpectancy desc limit 1;
+
+4. select c.ID, c.Name, c.CountryCode from city c join country co on c.ID=co.Capital where CountryCode="ESP";
+
+5. select l.CountryCode, l.language from countrylanguage l join country c on l.CountryCode=c.Code where Region="Southeast Asia";
+
+6. select * from city where Name between "F" and "G" limit 25;
+
+7. select count(*) from city where CountryCode="CHN";
+
+8. select * from country where GNPOld is not null order by Population asc limit 1;
+
+9. select count(*) from country;
+
+10. select * from country order by SurfaceArea desc limit 10;
+
+11. select * from city where CountryCode="JPN" order by Population desc limit 5;
+
+12. select Name, Code from country where HeadOfState="Elisabeth II";
+
+13. 
+
+14. 
+
+15. 
+
+16. 
+
+17. 
+
+18. 
+
+19. 
+
+20. 
