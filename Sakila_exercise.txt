@@ -19,7 +19,7 @@ select description from film where film_id=100;
 
 9. select title from film;
 
-10. select * from film where special_features in ("Deleted Scenes");
+10. select * from film where special_features in "%Deleted Scenes%";
 
 11. select distinct last_name from actor;
 
@@ -38,7 +38,7 @@ select * from inventory where film_id=1;
 
 17. select avg(length), category from film_list group by category;
 
-18. select count(*) from film where description in ("robots");
+18. select count(*) from film where description in "%robots%";
 
 19. select max(length) from film;
 select count(length) from film where length=185;
@@ -56,7 +56,7 @@ select count(length) from film where length=185;
 25. select distinct country from country;
 	1. select name as language from language order by name asc;
 
-26. select concat(first_name, ' ', last_name) as full_name from actor where last_name like '%son%';
+26. select concat(first_name, ' ', last_name) as full_name from actor where last_name like '%son%' order by first_name;
 
 27. select category, count(category) from film_list group by category having count(category) > 1;
 
