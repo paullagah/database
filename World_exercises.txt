@@ -16,23 +16,23 @@
 
 9. select count(*) from country;
 
-10. select * from country order by SurfaceArea desc limit 10;
+10. select * from country order by Population desc limit 10;
 
 11. select * from city where CountryCode="JPN" order by Population desc limit 5;
 
 12. select Name, Code from country where HeadOfState="Elisabeth II";
 
-13. 
+13. select Name, concat("1:", 1/(Population/SurfaceArea)) as ratio from country where Population is not null order by ratio asc limit 10;
 
-14. 
+14. select distinct Language from countrylanguage;
 
-15. 
+15. select * from country order by GNP desc limit 10;
 
-16. 
+16. select * from country order by SurfaceArea desc limit 10;
 
-17. 
+17. select * from countrylanguage where Language="French" AND Percentage > 50;
 
-18. 
+18. select * from country where LifeExpectancy is not null order by LifeExpectancy asc limit 1;
 
 19. 
 
